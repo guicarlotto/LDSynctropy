@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #fefefe;
+    --highlight-color: #EBC70C;
+    --secundary-color: #222;
+    --third-color: #B8B8B8;
+    --pMobile: 0.8em;
+    --pDesk: 1em;
+    --H1Mobile: 3.4em;
+    --H1Desk: 4em;
+    --H2Mobile: 1.7em;
+    --H2Desk: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+        background: url(./Imgs/Synctropy-Logo-BG-Black.png) no-repeat center fixed, linear-gradient(90deg, #1E1E1E,#292929);
+}
+
+h1 {
+    font-size: var(--H1Desk);
+    color: var(--primary-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h2 {
+    font-size: var(--H2Desk);
+    color: var(--primary-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.highlightH1 {
+    color: var(--highlight-color);
+}
+
+p {
+    font-size: var(--pDesk);
+    color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*div.Link{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}*/
+
+a.navBarLink {
+    font-size: var(--pDesk);
+    font-weight: 400;
+    color: var(--primary-color);
+    transition-duration: 0.05s;
+    padding: 0px 0px 3px 0px;
+    margin: 10px 10px 7px 10px;
+}
+
+a.navBarLink:hover {
+    border-style: none none solid none;
+    border-width: 2px; 
+    
+}
+
+a.navBarLink:active { 
+    color: var(--highlight-color);
+}
+
+a.highlightLink {
+    font-size: var(--pDesk);
+    font-weight: 900;
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 6px;
+    transition-duration: 0.25s;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+a.highlightLink:hover {
+    font-size: var(--pDesk);
+    font-weight: 900;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+a.highlightLink:active {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: var(--secundary-color);   
+}
+
+div.navBar {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}
+
+div.logoNavBar {
+    display: flex;
+}
+
+div.navBarMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px; 
+}
+
+div.socialIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;  
+}
+
+main {
+    margin: auto 0% 40px 20%;
+}
+
+.heroSection {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    gap: 15px;
+}
+
+@media (min-width: 2500px) {
+    main{
+     margin: auto 22% 60px 22%;
+    }
+ }
+
+
+
+@media (max-width: 750px) {
+   p {
+    font-size: var(--pDesk);
+   }
+   h1 {
+    font-size: var(--H1Mobile);
+   }
+   h2 {
+    font-size: var(--H2Mobile);
+   }
+   main{
+    margin: auto 5% 60px 5%;
+   }
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #1E1E1E;
+}
+.footerText {
+    color: var(--third-color);
+}
